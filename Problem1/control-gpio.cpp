@@ -17,6 +17,7 @@ int main(){
    // Basic Output - Flash the LED 10 times, once per second
    outGPIO.setDirection(OUTPUT);
    inGPIO.setDirection(INPUT);
+   inGPIO2.setDirection(INPUT);
    if(inGPIO.getValue()==0)  
    outGPIO.setValue(HIGH);
    

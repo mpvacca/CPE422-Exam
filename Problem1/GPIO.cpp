@@ -101,7 +101,7 @@ int GPIO::write(string path, string filename, int value){
 
 int GPIO::setDirection(GPIO_DIRECTION dir){
    switch(dir){
-   case INPUT: return this->write(this->path, "direction", "in");
+   case INPUT: return this->write(this->path, "direction", "in+");
       break;
    case OUTPUT:return this->write(this->path, "direction", "out");
       break;
